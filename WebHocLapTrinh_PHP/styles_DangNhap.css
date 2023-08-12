@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-image:  url("images/flatage.gif");
+  background-size: 100% 100%;
+} 
+
+p{ 
+  font-weight:bolder;
+  font-size:100px;
+  margin-top: 0px;
+  padding-top:0px;
+  text-align: center;
+  color:#00CCFF !important;
+}
+
+button{
+  border-radius: 4px  !important ;
+  padding:5px 10px;
+  background-color: #d80b0b;
+  color: #ffffff;
+  border:0;
+  box-shadow: 0 5px 0 #8d0a0a;
+  transition: .2s;
+  margin-left:20px;
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: center;
+}
+
+button:active{
+  box-shadow: none;
+  transform:translateY(5px);
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.8);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.3);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #FFF;
+  font-size: 12px;
+}
+
+
